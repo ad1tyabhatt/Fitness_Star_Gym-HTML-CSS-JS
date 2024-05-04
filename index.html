@@ -27,6 +27,43 @@
         </ul>
       </nav>
     </header>
+    <div class="popup">
+      <h1>SUBSCRIPTION PLAN</h1>
+      <form action="/">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" /><br /><br />
+        <label for="email">Email:</label>
+        <input type="text" name="email" /><br /><br />
+        <label for="number">Mobile:</label>
+        <input type="number" name="mobile" /><br /><br />
+        <label for="duration">Duration:</label>
+        <input type="radio" name="duration" id="monthly" value="yearly" />
+        <label for="monthly">Monthly</label>
+        <input type="radio" name="duration" id="yearly" value="yearly" />
+        <label for="yearly">Yearly</label> <br /><br />
+        <label for="payment-mode">Mode of Payment:</label>
+        <input type="radio" name="payment-mode" id="cash" value="Cash" />
+        <label for="cash">Cash</label>
+        <input type="radio" name="payment-mode" id="online" value="online" />
+        <label for="online">Online</label> <br /><br />
+        <label for="training">Personal Training: <span class="small">*free with yearly plan</span></label><br>
+        <input type="radio" name="training" id="required" value="required" />
+        <label for="monthly">Required</label>
+        <input
+          type="radio"
+          name="training"
+          id="not-required"
+          value="not-required"
+        />
+        <label for="not-required">Not Required</label> <br /><br />
+        <input type="checkbox" name="tnc" id="tnc" />
+        <label for="tnc"
+          >I accept all terms and conditions provided in this form.</label
+        ><br /><br />
+        <button class="buy-plan">BUY PLAN</button>
+        <button class="close-btn">CLOSE</button>
+      </form>
+    </div>
     <section class="section-1">
       <div class="getStarted-h">Revitalize your body</div>
       <div class="gettStarted-desc">
@@ -142,27 +179,26 @@
       </div>
       <div class="sec contact-details">
         <div class="contact">CONTACT</div>
-        <div class=" contact">COMPANY</div>
-        <div class=" contact">MORE</div>
-        <div class=" contact">about</div>
+        <div class="contact">COMPANY</div>
+        <div class="contact">MORE</div>
+        <div class="contact">about</div>
         <div class="contact">help</div>
         <div class="contact">press</div>
-        <div class=" contact">mobile</div>
-        <div class=" contact">method</div>
-        <div class=" contact">plan</div>
+        <div class="contact">mobile</div>
+        <div class="contact">method</div>
+        <div class="contact">plan</div>
       </div>
       <div class="sec tags">
         <span class="orange underline">Popular Tags</span>
         <div class="tag-heading">
           <button class="bg-orange">ABS</button>
           <button>Workout</button>
-          <button >GYM</button>
+          <button>GYM</button>
           <button class="bg-orange">Trainer</button>
         </div>
       </div>
     </div>
-   <footer class="bg-orange">
-    &copy; CopyRight  All  Rights  Reserved
-   </footer>
+    <footer class="bg-orange">&copy; CopyRight All Rights Reserved</footer>
+    <script defer src="./script.js"></script>
   </body>
 </html>
