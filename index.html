@@ -11,6 +11,7 @@
     />
   </head>
   <body>
+    
     <header>
       <div class="navbar">
         <img id="logo" src="./assets//img/fitness logo.png" />
@@ -26,14 +27,14 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </header> 
     <div class="popup">
       <h1>SUBSCRIPTION PLAN</h1>
       <form action="/">
         <label for="name">Full Name:</label>
-        <input type="text" name="name" /><br /><br />
+        <input id="userName" type="text" name="name" /><br /><br />
         <label for="email">Email:</label>
-        <input type="text" name="email" /><br /><br />
+        <input id="userEmail"type="text" name="email" /><br /><br />
         <label for="number">Mobile:</label>
         <input type="number" name="mobile" /><br /><br />
         <label for="duration">Duration:</label>
@@ -60,8 +61,10 @@
         <label for="tnc"
           >I accept all terms and conditions provided in this form.</label
         ><br /><br />
-        <button class="buy-plan">BUY PLAN</button>
+        <button class="buy-plan" id="s-btn">BUY PLAN</button>
         <button class="close-btn">CLOSE</button>
+        <!-- while using the button the form was getting submitted -->
+        <!-- <button type="button" class="close-btn">CLOSE</button> -->
       </form>
     </div>
     <section class="section-1">
@@ -133,9 +136,21 @@
         </div>
       </div>
     </div>
-    <div class="fitness-bg">
-      <div class="fitness-club"></div>
-      <div class="sessions">
+      <div class="best-facility">
+        <div class="fac">
+          <img src="./assets//img/fac.jfif" alt="" />
+          <p>Best place for body transformation</p>
+        </div>
+        <div class="fac">
+          <img src="./assets/img/fac.jfif" alt="" />
+          <p>Best Cross Fit gym in this area</p>
+        </div>
+        <div class="fac">
+          <img src="./assets/img/fac.jfif" alt="" />
+          <p>Best Bodybuilding gym in this city</p>
+        </div>
+      </div>
+      <!-- <div class="fitness-club"></div> -->
         <div class="services">
           <div class="service">
             <img src="./assets/img/gm.png" alt="" />
@@ -151,23 +166,6 @@
             <img src="./assets/img/ft2.png" alt="" />
             <h4>Personal Trainers</h4>
             <p>If it doesn't challenge you, it won't change you</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="yellow-bg"></div>
-    <div class="best-facility">
-      <div class="fac">
-        <img src="./assets//img/fac.jfif" alt="" />
-        <p>Best place for body transformation</p>
-      </div>
-      <div class="fac">
-        <img src="./assets/img/fac.jfif" alt="" />
-        <p>Best Cross Fit gym in this area</p>
-      </div>
-      <div class="fac">
-        <img src="./assets/img/fac.jfif" alt="" />
-        <p>Best Bodybuilding gym in this city</p>
       </div>
     </div>
     <div class="more">

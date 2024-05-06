@@ -20,15 +20,16 @@
 
 body {
   /* background-color: chocolate; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 }
+
 header {
   width: 100%;
   background: var(--background-main);
   z-index: 1;
-  padding: 10px 60px 10px 60px;
+  padding: 1em 5em;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -36,6 +37,9 @@ header {
   color: white;
 }
 
+/* header #logo{
+  flex-shrink: 0;
+} */
 .navbar {
   width: 100%;
   background-color: var(--background);
@@ -46,11 +50,13 @@ header {
   height: 120px;
 }
 
+
+
 .navbar ul {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 4rem;
+  gap: 4em;
   justify-content: center;
   align-items: center;
 }
@@ -62,15 +68,18 @@ header {
 .navbar a {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 .join-btn,.close-btn,.buy-plan {
   background-color: var(--background-secondary);
-  border-radius: 10px;
-  width: 100px;
-  height: 45px;
-  font-size: 1.2rem;
+  border-radius: 0.6em;
+  border: none;
+  margin: 0 1em;
+  width: 8em;
+  height: 3em;
+  font-weight: 500;
+  font-size: 1.1em;
   border: 2px solid black;
   box-shadow: 8px 4px 8px -3px rgba(0, 0, 0, 0.75);
 }
@@ -87,7 +96,7 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 50px 450px;
+  height: 100vh;
   background-image: url("./assets/img/girl\ gym.webp");
   background-position: center;
   background-size: cover;
@@ -96,8 +105,8 @@ header {
 }
 
 .getStarted-h {
-  display: flex;
-  font-size: 4rem;
+  /* display: flex; */
+  font-size: 3em;
   color: white;
   font-weight: 700;
   font-family: "Radio Canada", sans-serif;
@@ -105,7 +114,7 @@ header {
 }
 
 .gettStarted-desc {
-  font-size: 1rem;
+  font-size: 1em;
   color: #d7d0d0;
   padding: 40px;
 }
@@ -124,17 +133,18 @@ header {
 }
 
 .btn-start {
-  border-radius: 7px;
-  border: none;
-  margin: 0 10px;
-  width: 150px;
-  height: 45px;
-  font-weight: 500;
-  font-size: 1em;
+  border-radius: 0.6em;
+    border: none;
+    margin: 0 1em;
+    width: 10em;
+    height: 3em;
+    font-weight: 500;
+    font-size: 1.1em;
 }
 .popup {
-  width: 50vw;
+  width: 40vw;
   height: 90vh;
+  font-size: 0.9em;
   background-color: white;
   border-radius: 16px;
   padding: 8px 30px;
@@ -143,12 +153,12 @@ header {
   transform: translate(-50%, -50%) scale(0);
   transition: all 0.2s ease-in-out;
   top: 0;
-  font-weight: 500;
+  font-weight: 400;
   left: 0;
   display: none;
 }
 .small{
-  font-size: 0.5rem;
+  font-size: 0.5em;
 }
 
 .popup button{
@@ -171,7 +181,7 @@ header {
   clip-path: polygon(0px 0px, 100% 0px, 80% 100%, 0% 100%);
   background-color: var(--background-secondary);
   position: absolute;
-  bottom: 25px;
+  bottom: -100px;
   left: -30px;
   height: 50px;
   width: 200px;
@@ -179,8 +189,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  border: 2px solid white;
+  gap: 1em;
+  /* border: 2px solid white; */
 }
 
 .fa {
@@ -192,7 +202,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  padding: 3rem;
+  padding: 3em;
 }
 
 .parent > * {
@@ -200,8 +210,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  /* margin-top:3rem; */
+  padding: 2em;
+  /* margin-top:3em; */
   border-top: none;
   font-weight: 600;
 }
@@ -235,14 +245,14 @@ header {
   grid-area: 2 / 3 / 3 / 4;
 }
 .subscription {
-  padding: 4.5rem 2rem;
-  /* padding-top: 3rem; */
-  margin-top: 3rem;
+  padding: 4.5rem 2em;
+  /* padding-top: 3em; */
+  /* margin-top: 3em; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 4rem;
+  gap: 4em;
   background-image: url("./assets/img/sub-img.jfif");
   background-position: center;
   background-size: cover;
@@ -250,7 +260,7 @@ header {
 .subscription > h1 {
   color: var(--background-secondary);
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2em;
   font-family: "Ubuntu", sans-serif;
 }
 .card {
@@ -258,15 +268,15 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 4rem 5rem;
+  gap: 4rem 5em;
 }
 .card > * {
   display: flex;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1em;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2em;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
   filter: drop-shadow(4px 5px 18px var(--background-primary));
@@ -277,7 +287,7 @@ header {
 h3 {
   color: var(--background-secondary);
   font-family: var(--font-canda);
-  font-size: 1.75rem;
+  font-size: 1.75em;
   font-weight: 500;
 }
 h2 {
@@ -285,7 +295,7 @@ h2 {
   font-weight: 500;
 }
 .card p {
-  margin-top: -1rem;
+  margin-top: -1em;
   color: var(--background-ter);
 }
 
@@ -293,7 +303,7 @@ h2 {
   border-radius: 10px;
   width: 150px;
   height: 45px;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   border: 3px solid var(--background-secondary);
   background-color: var(--background-ter);
   color: white;
@@ -310,7 +320,7 @@ h2 {
 .sessions {
   background-color: white;
   width: 80%;
-  position: absolute;
+  /* position: absolute; */
   bottom: -200px;
   right: 10%;
 }
@@ -320,7 +330,7 @@ h2 {
 
 .services {
   display: flex;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1em;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -330,7 +340,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 2rem 1em;
   gap: 0;
 }
 .service img {
@@ -338,7 +348,7 @@ h2 {
 }
 .service p {
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 .yellow-bg {
   background-color: #ffa500;
@@ -347,44 +357,44 @@ h2 {
 
 .best-facility{
   background-color: black;
-  padding: 5rem;
+  padding: 5em;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 4rem 5rem;
+  gap: 4rem 5em;
 }
 .fac{
   display: flex;
-  /* padding: 1.5rem 4rem; */
+  /* padding: 1.5rem 4em; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   font-weight: 500;
-  gap: 2rem;
+  gap: 2em;
   color: var(--background-secondary);
 }
 .fac img{
-  height: 20rem;
+  height: 20em;
 }
 
 .more{
   background-color:var(--background-main);
-  padding: 5rem;
+  padding: 2em 1.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  /* gap: 4rem 5rem; */
+  /* gap: 4rem 5em; */
 }
 
 .contact-details{
   display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 3rem;
-grid-row-gap: 2rem;
+grid-column-gap: 3em;
+grid-row-gap: 2em;
 color: white;
 }
 
@@ -395,7 +405,7 @@ color: white;
   color: white;
 }
 .goal img{
-  height: 200px;
+  height: 10rem;
 }
 .goal p{
   font-weight: 600;
@@ -411,7 +421,7 @@ color: white;
 
 .tags{
   display: flex;
-  gap: 3rem;
+  gap: 3em;
   justify-content: center;
   flex-direction: column;
 }
@@ -419,8 +429,8 @@ color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 3rem;
-  grid-row-gap: 2rem;
+  grid-column-gap: 3em;
+  grid-row-gap: 2em;
 }
 
 .bg-orange{
@@ -440,5 +450,103 @@ color: white;
 footer{
   font-weight: 600;
   text-align: center;
-  padding: 0.4rem;
+  padding: 0.4em;
 }
+
+
+@media screen and (max-width: 768px) {
+  body{
+    font-size: 12px;
+  }
+  header{
+    display: none;
+  }
+  .section-1{
+    min-width: 100vw;
+  }
+
+}
+
+@media screen and (max-width: 426px){
+ header{
+  width: 100vw;
+ }
+ .section-1>*{
+  min-width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+ .best-facility{
+  min-width: 100%;
+  display: inline-block;
+  
+}
+.parent{
+
+  background: #FFA50052;
+}
+ .card,.services,.best-facility{
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+
+ .parent,.more,.goal,.tags{
+  /* grid-template-rows: repeat(3, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem 0;
+  /* this is the same as grid-template-rows: 300px 300px; */
+  /* grid-template-rows: repeat(6, 300px); */
+ }
+ .buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+ .section-1{
+  position: relative;
+ }
+ .cutout{
+  bottom: 0px;
+  position: absolute;
+ }
+ .fac{
+  justify-content: center;
+  padding: 1rem 0;
+  text-align: center;
+ }
+
+
+ .parent>*{
+  /* grid-area: auto; */
+  border: none;
+ }
+ .yellow-bg{
+  display: none;
+ }
+ .services{
+  display: block;
+ }
+}
+
+@media screen and (max-width:768px ){
+  header{
+    padding:0px;
+  }
+  .more>*{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+
