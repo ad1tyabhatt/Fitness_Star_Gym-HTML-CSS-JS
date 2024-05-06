@@ -18,12 +18,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+/* body { */
   /* background-color: chocolate; */
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
-}
+/* } */
 
 header {
   width: 100%;
@@ -49,8 +49,6 @@ header {
 #logo {
   height: 120px;
 }
-
-
 
 .navbar ul {
   list-style: none;
