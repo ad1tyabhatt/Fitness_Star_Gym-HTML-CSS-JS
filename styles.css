@@ -29,11 +29,12 @@ header {
   width: 100%;
   background: var(--background-main);
   z-index: 1;
-  padding: 1em 5em;
+  padding: 1rem 5rem;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0 1rem;
   color: white;
 }
 
@@ -43,8 +44,10 @@ header {
 .navbar {
   width: 100%;
   background-color: var(--background);
-  font-weight: 500;
+  font-weight: 400;
 }
+
+
 
 #logo {
   height: 120px;
@@ -66,7 +69,7 @@ header {
 .navbar a {
   color: white;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .join-btn,.close-btn,.buy-plan {
@@ -87,6 +90,10 @@ header {
   background-color: var(--background-primary);
 }
 
+.join-btn:hover,:focus{
+  background-color: var(--background-main);
+  color: white;
+}
 .section-1 {
   display: flex;
   justify-content: center;
@@ -457,7 +464,7 @@ footer{
     font-size: 12px;
   }
   header{
-    display: none;
+    /* display: none; */
   }
   .section-1{
     min-width: 100vw;
@@ -468,6 +475,9 @@ footer{
 @media screen and (max-width: 426px){
  header{
   width: 100vw;
+  padding: 0;
+  display: none;
+  gap: 0;
  }
  .section-1>*{
   min-width: 100%;
