@@ -19,8 +19,8 @@
 }
 
 /* body { */
-  /* background-color: chocolate; */
-  /* display: flex;
+/* background-color: chocolate; */
+/* display: flex;
   flex-direction: column;
   justify-content: center; */
 /* } */
@@ -28,7 +28,7 @@
 header {
   width: 100%;
   background: var(--background-main);
-  z-index: 1;
+  background-image: linear-gradient(to bottom, #524d4d, #484343, #3f3a3a, #353131, #2c2828);
   padding: 1rem 5rem;
   height: 80px;
   display: flex;
@@ -46,8 +46,6 @@ header {
   background-color: var(--background);
   font-weight: 400;
 }
-
-
 
 #logo {
   height: 120px;
@@ -72,7 +70,9 @@ header {
   font-size: 1.2em;
 }
 
-.join-btn,.close-btn,.buy-plan {
+.join-btn,
+.close-btn,
+.buy-plan {
   background-color: var(--background-secondary);
   border-radius: 0.6em;
   border: none;
@@ -87,13 +87,16 @@ header {
 
 .join-btn:hover {
   cursor: pointer;
+  text-decoration: none;
   background-color: var(--background-primary);
 }
 
-.join-btn:hover,:focus{
+.join-btn:hover,
+:focus {
   background-color: var(--background-main);
   color: white;
 }
+
 .section-1 {
   display: flex;
   justify-content: center;
@@ -139,12 +142,12 @@ header {
 
 .btn-start {
   border-radius: 0.6em;
-    border: none;
-    margin: 0 1em;
-    width: 10em;
-    height: 3em;
-    font-weight: 500;
-    font-size: 1.1em;
+  border: none;
+  margin: 0 1em;
+  width: 10em;
+  height: 3em;
+  font-weight: 500;
+  font-size: 1.1em;
 }
 .popup {
   width: 40vw;
@@ -162,19 +165,19 @@ header {
   left: 0;
   display: none;
 }
-.small{
+.small {
   font-size: 0.5em;
 }
 
-.popup button{
-  margin: 10px 30px ;
+.popup button {
+  margin: 10px 30px;
 }
-.popup h1{
+.popup h1 {
   text-align: center;
   margin-bottom: 25px;
 }
 
-.popup.open  {
+.popup.open {
   display: block;
   left: 50%;
   top: 50%;
@@ -275,6 +278,17 @@ header {
   flex-direction: row;
   gap: 4rem 5em;
 }
+.card>*:hover {
+  filter: drop-shadow(4px 5px 18px var(--background-primary));
+  scale: 1.1; 
+  background-color: #1a1919;
+  
+  transform-origin: center top;
+  transform-style: preserve-3d;
+  transform: translateZ( 100 );
+  transition: .3s;
+ 
+}
 .card > * {
   display: flex;
   padding: 1.5rem 1em;
@@ -284,7 +298,6 @@ header {
   gap: 2em;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
-  filter: drop-shadow(4px 5px 18px var(--background-primary));
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
@@ -310,8 +323,8 @@ h2 {
   height: 45px;
   font-size: 1.2em;
   border: 3px solid var(--background-secondary);
-  background-color: var(--background-ter);
-  color: white;
+  background-color: var(--background-secondary);
+  color: black;
 }
 
 .fitness-club {
@@ -360,7 +373,7 @@ h2 {
   height: 50vh;
 }
 
-.best-facility{
+.best-facility {
   background-color: black;
   padding: 5em;
   display: flex;
@@ -369,8 +382,9 @@ h2 {
   flex-direction: row;
   gap: 4rem 5em;
 }
-.fac{
+.fac {
   display: flex;
+  height: 30rem;
   /* padding: 1.5rem 4em; */
   justify-content: center;
   align-items: center;
@@ -380,12 +394,12 @@ h2 {
   gap: 2em;
   color: var(--background-secondary);
 }
-.fac img{
+.fac img {
   height: 20em;
 }
 
-.more{
-  background-color:var(--background-main);
+.more {
+  background-color: var(--background-main);
   padding: 2em 1.5em;
   display: flex;
   align-items: center;
@@ -394,43 +408,42 @@ h2 {
   /* gap: 4rem 5em; */
 }
 
-.contact-details{
+.contact-details {
   display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 3em;
-grid-row-gap: 2em;
-color: white;
-}
-
-.orange{
-  color: var(--background-secondary);
-}
-.white{
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 3em;
+  grid-row-gap: 2em;
   color: white;
 }
-.goal img{
+
+.orange {
+  color: var(--background-secondary);
+}
+.white {
+  color: white;
+}
+.goal img {
   height: 10rem;
 }
-.goal p{
+.goal p {
   font-weight: 600;
 }
 
-.tag-heading span{
-  text-decoration: underline;
-
-}
-.underline{
+.tag-heading span {
   text-decoration: underline;
 }
+.underline {
+  text-decoration: underline;
+}
 
-.tags{
+.tags {
   display: flex;
   gap: 3em;
   justify-content: center;
   flex-direction: column;
 }
-.tag-heading{
+.tag-heading {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -438,11 +451,10 @@ color: white;
   grid-row-gap: 2em;
 }
 
-.bg-orange{
-
+.bg-orange {
   background-color: var(--background-secondary);
 }
-.tag-heading button{
+.tag-heading button {
   border-radius: 2px;
   border: none;
   /* margin: 0 10px; */
@@ -452,109 +464,106 @@ color: white;
   font-size: 1em;
 }
 
-footer{
+footer {
   font-weight: 600;
   text-align: center;
   padding: 0.4em;
 }
 
-
 @media screen and (max-width: 768px) {
-  body{
+  body {
     font-size: 12px;
   }
-  header{
+  header {
     /* display: none; */
   }
-  .section-1{
+  .section-1 {
     min-width: 100vw;
   }
-
 }
 
-@media screen and (max-width: 426px){
- header{
-  width: 100vw;
-  padding: 0;
-  display: none;
-  gap: 0;
- }
- .section-1>*{
-  min-width: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
- }
- .best-facility{
-  min-width: 100%;
-  display: inline-block;
-  
-}
-.parent{
-
-  background: #FFA50052;
-}
- .card,.services,.best-facility{
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
- }
-
- .parent,.more,.goal,.tags{
-  /* grid-template-rows: repeat(3, 1fr); */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 1rem 0;
-  /* this is the same as grid-template-rows: 300px 300px; */
-  /* grid-template-rows: repeat(6, 300px); */
- }
- .buttons{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
- }
- .section-1{
-  position: relative;
- }
- .cutout{
-  bottom: 0px;
-  position: absolute;
- }
- .fac{
-  justify-content: center;
-  padding: 1rem 0;
-  text-align: center;
- }
-
-
- .parent>*{
-  /* grid-area: auto; */
-  border: none;
- }
- .yellow-bg{
-  display: none;
- }
- .services{
-  display: block;
- }
-}
-
-@media screen and (max-width:768px ){
-  header{
-    padding:0px;
+@media screen and (max-width: 426px) {
+  header {
+    width: 100vw;
+    padding: 0;
+    display: none;
+    gap: 0;
   }
-  .more>*{
+  .section-1 > * {
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .best-facility {
+    min-width: 100%;
+    display: inline-block;
+  }
+  .parent {
+    background: #ffa50052;
+  }
+  .card,
+  .services,
+  .best-facility {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .parent,
+  .more,
+  .goal,
+  .tags {
+    /* grid-template-rows: repeat(3, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem 0;
+    /* this is the same as grid-template-rows: 300px 300px; */
+    /* grid-template-rows: repeat(6, 300px); */
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .section-1 {
+    position: relative;
+  }
+  .cutout {
+    bottom: 0px;
+    position: absolute;
+  }
+  .fac {
+    justify-content: center;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .parent > * {
+    /* grid-area: auto; */
+    border: none;
+  }
+  .yellow-bg {
+    display: none;
+  }
+  .services {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0px;
+  }
+  .more > * {
     display: flex;
     flex-wrap: wrap;
   }
-
 }
-
-
