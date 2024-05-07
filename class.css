@@ -27,30 +27,41 @@ body {
 header {
   width: 100%;
   background: var(--background-main);
-  z-index: 1;
-  padding: 10px 60px 10px 60px;
+  background-image: linear-gradient(to bottom, #524d4d, #484343, #3f3a3a, #353131, #2c2828);
+  padding: 1rem 5rem;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0 1rem;
   color: white;
 }
 
+/* header #logo{
+  flex-shrink: 0;
+} */
 .navbar {
   width: 100%;
   background-color: var(--background);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #logo {
   height: 120px;
 }
 
+.logo-container{
+  flex-grow:1 ;
+}
+.nav-ele{
+  flex-grow: 2;
+}
+
 .navbar ul {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 4rem;
+  gap: 4em;
   justify-content: center;
   align-items: center;
 }
@@ -62,22 +73,34 @@ header {
 .navbar a {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2em;
 }
 
-.join-btn {
+.join-btn,
+.close-btn,
+.buy-plan {
   background-color: var(--background-secondary);
-  border-radius: 10px;
-  width: 100px;
-  height: 45px;
-  font-size: 1.2rem;
+  border-radius: 0.6em;
+  border: none;
+  /* margin: 0 1em; */
+  width: 8em;
+  height: 3em;
+  font-weight: 500;
+  font-size: 1.1em;
   border: 2px solid black;
   box-shadow: 8px 4px 8px -3px rgba(0, 0, 0, 0.75);
 }
 
 .join-btn:hover {
   cursor: pointer;
+  text-decoration: none;
   background-color: var(--background-primary);
+}
+
+.join-btn:hover,
+:focus {
+  background-color: var(--background-main);
+  color: white;
 }
 
 .subscription {
