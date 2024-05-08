@@ -32,3 +32,28 @@ submitBtn.addEventListener('click',(e)=>{
   console.log('asd')
 })
 
+
+
+const imgs = document.getElementById('imgs')
+
+const img = document.querySelectorAll('#imgs img')
+let idx = 0
+
+// const stopButton = document.getElementById("img");
+
+// function stopScrolling(){
+//     img.length=0;
+// }
+
+function run() {
+    idx++;
+    if (idx > img.length) {
+        idx = 0
+    }
+    imgs.style.transform = `translateX(${-idx *500}px)`
+    setTimeout(run, 2000)
+    console.log("ji")
+}
+
+
+run()
